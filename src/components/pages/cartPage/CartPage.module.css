@@ -1,0 +1,48 @@
+.cart_wrapper {
+  padding: 0 40px 0 40px;
+}
+
+.flex_container {
+  display: grid;
+  grid-template-columns: 59% 1fr;
+  gap: 32px;
+}
+
+.flex_container> :last-child {
+  align-self: start;
+}
+
+.title_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .cart_wrapper {
+    padding: 0 20px 0 20px;
+  }
+
+  .flex_container {
+    grid-template-columns: 50% 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .flex_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_container {
+    padding-bottom: 24px;
+  }
+}

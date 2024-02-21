@@ -1,0 +1,33 @@
+.discounted_wrapper {
+    padding: 0 40px 0 40px;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media(max-width: 1000px) {
+    .discounted_wrapper {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .btn_container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+@media(max-width: 480px) {
+    .products_name {
+        padding-top: 32px;
+    }
+
+    .btn_container {
+        display: none;
+    }
+}
