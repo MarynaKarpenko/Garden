@@ -92,12 +92,6 @@
   color: var(--txt-black, #282828);
 }
 
-.filter_form input,
-.sort select {
-  border-radius: var(--radius-small, 6px);
-  border: 1px solid var(--grey-divider, #ddd);
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
