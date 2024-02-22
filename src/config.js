@@ -1,1 +1,1 @@
-export const BASE_URL = "https://backend-5qgr.onrender.com";
+export const BASE_URL = "https://garden-backend-a4pu.onrender.com";
