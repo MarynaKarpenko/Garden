@@ -9,6 +9,10 @@ import s from "./Header.module.css";
 export default function Header() {
   const location = useLocation();
   const productsInCart = useSelector((state) => state.cart);
+  const totalQuantityInCart = productsInCart.reduce(
+    (total, item) => total + item.count,
+    0
+  );
 
   const navLinks = [
     { to: "/", text: "Main Page" },
@@ -44,11 +48,12 @@ export default function Header() {
           <div className={s.cart}>
             <Link to={"/cart"}>
               <img src={iconShop} alt="Cart" className={s.icon_shop} />
-              {productsInCart.length > 0 ? (
+              {/* {productsInCart.length > 0 ? (
                 <span>{productsInCart.length}</span>
               ) : (
                 ""
-              )}
+              )} */}
+              {totalQuantityInCart > 0 && <span>{totalQuantityInCart}</span>}
             </Link>
           </div>
 
